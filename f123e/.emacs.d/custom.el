@@ -5,9 +5,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(dectalk-default-speech-rate 300)
- '(dtk-allcaps-beep t t)
- '(dtk-capitalize nil nil)
- '(dtk-split-caps nil nil)
+ '(dtk-allcaps-beep nil t)
+ '(dtk-capitalize nil t)
+ '(dtk-split-caps nil t)
  '(dtk-use-tones t)
  '(emacspeak-audio-indentation t)
  '(emacspeak-character-echo t)

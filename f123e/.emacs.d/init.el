@@ -5,7 +5,7 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
- (load-file "/usr/local/src/emacspeak/lisp/emacspeak-setup.el")
+(load-file "/usr/local/src/emacspeak/lisp/emacspeak-setup.el")
 
 (set 'custom-file (expand-file-name "~/.emacs.d/custom.el"))
 (load custom-file)
