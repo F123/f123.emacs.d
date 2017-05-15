@@ -19,6 +19,10 @@
 (normal-top-level-add-subdirs-to-load-path)))
 load-path)))
 
+;; Set text-mode as the default major mode and turn on autofill-mode
+(setq default-major-mode 'text-mode)
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
+
 ;; load personal libraries
 (load-library "elpa-prepare.el")
 (load-library "markdown-prepare")

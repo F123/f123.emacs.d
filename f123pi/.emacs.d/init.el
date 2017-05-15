@@ -5,7 +5,7 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
- (load-file "/usr/local/src/emacspeak/lisp/emacspeak-setup.el")
+(load-file "/usr/local/src/emacspeak/lisp/emacspeak-setup.el")
 
 (set 'custom-file (expand-file-name "~/.emacs.d/custom.el"))
 (load custom-file)
@@ -18,6 +18,10 @@
 (copy-sequence (normal-top-level-add-to-load-path '(".")))
 (normal-top-level-add-subdirs-to-load-path)))
 load-path)))
+
+;; Set text-mode as the default major mode and turn on autofill-mode
+(setq default-major-mode 'text-mode)
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 ;; load personal libraries
 (load-library "elpa-prepare.el")
